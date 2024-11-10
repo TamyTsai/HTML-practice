@@ -1,0 +1,50 @@
+<!-- 縮排換行只是讓人類方便看，其實有沒有縮排換行沒差，如果不縮排換行比較方便看，那也可不要縮排換行 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--下面那行寫的是網頁編碼方式-->
+        <meta charset="UTF-8"/>
+        <title>貓的網頁</title>
+    </head>
+    <body>
+        <!--連結-->
+        <a href="http://google.com">google網站</a> <!-- href為a標籤的屬性，寫在角括號裡面 -->
+		<a href="page2.html">在同一個資料夾的第二頁</a> <!-- 如要插入同一個資料夾下的html，則直接寫檔案名稱 -->
+        <a href="dir/page3.html">不在同一個資料夾的第三頁</a> <!-- 如要插入不同資料夾下的html，則檔案名稱前要加「資料夾名稱/」 -->
+		<a href="hotpot.jpg">火鍋</a> <!-- 會出現名為火鍋的圖片連結 -->
+        <!--圖片-->
+        <!-- 直接出現圖片 -->
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F5%2F58%2FShiba_inu_taiki.jpg&imgrefurl=https%3A%2F%2Fzh.wikipedia.org%2Fwiki%2F%25E6%259F%25B4%25E7%258A%25AC&tbnid=s_aCJSdMC9ccSM&vet=12ahUKEwjEyd-63-f1AhUCdpQKHZEODxAQMygAegUIARD4AQ..i&docid=-dsMtNfFyMbrbM&w=2175&h=2563&q=%E6%9F%B4%E7%8A%AC&ved=2ahUKEwjEyd-63-f1AhUCdpQKHZEODxAQMygAegUIARD4AQ"/>（從其他網址插入圖片，google圖片，並複製圖片連結）
+        <img src="hotpot.jpg" width="400" height="400"/> <!-- 使用電腦裡的圖片檔案，只要直接打檔案名稱。想改變大小可以自己設長寬。src屬性 表 圖片位置 -->
+        <img src="hotpot.jpg" width="400"/> <!-- 只設定長或寬，可以使圖片等比例改變 -->
+		</body>
+</html>
+
+
+<!-- page2 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8/">
+		<title>page3</title>
+	</head>
+	<body>
+		<h1>page3</h1>
+		<hr>
+		<a href="index.html">home</a> <!-- 因為在同一個資料夾，所以裡面直接寫主頁面的檔案名稱 -->
+	</body>
+</html>
+
+<!-- page3 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8/">
+		<title>page3</title>
+	</head>
+	<body>
+		<h1>page3</h1>
+		<hr>
+		<a href="../index.html">home</a> <!-- 裡面寫主頁面的檔案名稱，而因為此頁面與主頁面放在不同資料夾，所以要先跳出資料夾，在檔案名稱前加「../」 -->
+	</body>
+</html>
